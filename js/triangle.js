@@ -1,6 +1,9 @@
+// Two different approaches to calculate area of triangle: 1) asking user for sides and 2) creating a triangle object
+
+// 1) asking user for sides
 // function calculateArea(s1, s2, s3) {
-// 	var perimeter = (s1 + s2 + s3)/2;
-// 	var Area = Math.sqrt(perimeter * (perimeter - s1) * (perimeter - s2) * (perimeter - s3));
+// 	var p = (s1 + s2 + s3)/2;
+// 	var Area = Math.sqrt(p * (p - s1) * (p - s2) * (p - s3)); // p = perimeter / 2
 // 	return Area;
 // };
 
@@ -11,7 +14,7 @@
 // console.log(calculateArea(s1, s2, s3));
 
 
-
+// 2) creating a triangle object
 var triangleArea = function (s1, s2, s3) {
 	var p = (s1 + s2 + s3)/2; //p=perimeter / 2
 	var Area = Math.sqrt(p * (p - s1) * (p - s2) * (p - s3));
