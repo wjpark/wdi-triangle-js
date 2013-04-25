@@ -13,8 +13,8 @@
 
 
 var triangleArea = function (s1, s2, s3) {
-	var perimeter = (s1 + s2 + s3)/2;
-	var Area = Math.sqrt(perimeter * (perimeter - s1) * (perimeter - s2) * (perimeter - s3));
+	var p = (s1 + s2 + s3)/2; //p=perimeter / 2
+	var Area = Math.sqrt(p * (p - s1) * (p - s2) * (p - s3));
 	return Area;
 };
 
@@ -26,5 +26,3 @@ var triangle = {
 
 console.log(triangleArea(triangle.sideA, triangle.sideB, triangle.sideC));
 
-
-// calculateArea.triangle = triangle;
